@@ -1,0 +1,53 @@
+.whynow {
+  background-color: white;
+  padding-top: 113px;
+  padding-bottom: 70px;
+
+  &__title {
+    color: #003744;
+    font-family: 'Montserrat Alternates';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  &__title-span {
+    color: #008080;
+  }
+
+  &__box-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  &__box {
+    position: relative;
+    display: inline-flex;
+    padding: 20px 49px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    border-radius: 30px;
+    border: 1px solid #008080;
+    background: #008080;
+
+    color: #f7f7f7;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  &__check-box-icon {
+    position: absolute;
+    top: -11px;
+    left: -11px;
+  }
+}
