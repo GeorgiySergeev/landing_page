@@ -1,0 +1,88 @@
+.faq {
+  background-color: #fff;
+  padding-bottom: 70px;
+
+  &__title {
+    color: #003744;
+    font-family: 'Montserrat Alternates';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__item {
+    position: relative;
+    width: 100%;
+    height: auto;
+
+    padding: 22px 23px;
+
+    border-radius: 44px;
+    border: 1px solid #008080;
+
+    color: #003744;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    overflow: auto;
+  }
+
+  &__item-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__item-content {
+    display: none;
+    max-width: 310px;
+    color: #003744;
+    font-family: Montserrat;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    margin-top: 10px;
+  }
+
+  &__item-content--span {
+    display: block;
+    margin-top: 15px;
+  }
+
+  // &__item-title {
+  //   margin-bottom: 10px;
+  // }
+}
+
+.drop-down-btn {
+  width: 25px;
+  height: 25px;
+  top: 50%;
+  right: 23px;
+  // transform: translate(-50%, -50%);
+
+  // display: flex;
+  // align-items: center;
+  // justify-content: end;
+}
+
+.is-shown {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}

@@ -23,7 +23,7 @@
 //   minEl.textContent = addLeadingZero(Math.floor(((ms % day) % hour) / minute));
 // }
 function timer() {
-  const targetDate = new Date('2024-04-23T00:00:00');
+  const targetDate = new Date('2024-04-28T00:00:00');
   const currentDate = new Date();
 
   const totalSeconds = Math.floor((targetDate - currentDate) / 1000);
@@ -31,13 +31,13 @@ function timer() {
   const hours = Math.floor((totalSeconds % (3600 * 24)) / 3600);
   const minutes = Math.floor((totalSeconds % 3600) / 60);
 
-  const daysEl = document.querySelector('[data-days]');
-  const hoursEl = document.querySelector('[data-hours]');
-  const minutesEl = document.querySelector('[data-minutes]');
+  const daysEl = document.querySelectorAll('[data-days]');
+  const hoursEl = document.querySelectorAll('[data-hours]');
+  const minutesEl = document.querySelectorAll('[data-minutes]');
 
-  daysEl.textContent = days;
-  hoursEl.textContent = hours < 10 ? '0' + hours : hours;
-  minutesEl.textContent = minutes < 10 ? '0' + minutes : minutes;
+  daysEl.forEach((element) => (element.textContent = days));
+  hoursEl.forEach((element) => (element.textContent = hours < 10 ? '0' + hours : hours));
+  minutesEl.forEach((element) => (element.textContent = minutes < 10 ? '0' + minutes : minutes));
 }
 
 setInterval(timer, 1000);

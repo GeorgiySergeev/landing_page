@@ -21,43 +21,65 @@
   position: relative;
   padding-top: 24px;
   padding-bottom: 20px;
-}
+  overflow: hidden;
 
-.hero__title-span1 {
-  color: #fff;
-  font-family: 'Montserrat Alternates';
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
+  &__svg-wrapper {
+    position: absolute;
+    top: 264px;
+    right: 25px;
+    width: 70.774px;
+    height: 70.774px;
+    flex-shrink: 0;
 
-  margin-bottom: 5px;
-  display: block;
-}
+    border-radius: 50%;
 
-.hero__title-span2 {
-  color: #fff;
-  font-family: 'Montserrat Alternates';
-  font-size: 27px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  text-transform: uppercase;
-}
+    border: 1.293px solid rgba(0, 194, 194, 1);
+    // border-image: linear-gradient(rgba(0, 194, 194, 1), rgba(0, 64, 79, 1)) 1 1;
+  }
 
-.hero__title-span3 {
-  color: #00c2c2;
-  font-family: 'Montserrat Alternates';
-  font-size: 53px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  text-transform: uppercase;
+  &__svg-wrapper--small {
+    top: 366px;
+    right: 62px;
+    width: 41.39px;
+    height: 41.39px;
+    flex-shrink: 0;
+  }
+
+  &__title-span1 {
+    color: #fff;
+    font-family: 'Montserrat Alternates';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+
+    margin-bottom: 5px;
+    display: block;
+  }
+  &__title-span2 {
+    color: #fff;
+    font-family: 'Montserrat Alternates';
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+
+  &__title-span3 {
+    color: #00c2c2;
+    font-family: 'Montserrat Alternates';
+    font-size: 53px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+  }
 }
 
 .promo {
-  @include desctop {
-    background-color: tomato;
-  }
+  // @include desctop {
+  //   background-color: tomato;
+  // }
 
   &__inner {
     @include mobile {
@@ -121,7 +143,7 @@
 
   &__button {
     display: flex;
-    width: 390px;
+    width: 370px;
     padding: 21px 55px;
     margin: 37px auto 0;
 
@@ -227,16 +249,16 @@
   &__bg {
     position: absolute;
     top: 624px;
-    right: 0;
-
-    width: 282px;
+    right: -130px;
+    width: 366.689px;
     height: 366.689px;
+    flex-shrink: 0;
     flex-shrink: 0;
 
     border-radius: 366.689px;
     background: linear-gradient(146deg, #00c2c2 10.79%, #00404f 133.48%), #00c2c2;
     filter: blur(97.00772857666016px);
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
   }
 

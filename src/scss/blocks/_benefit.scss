@@ -1,7 +1,19 @@
 .benefit {
   position: relative;
-  border-bottom: 1px solid #000;
+  // border-bottom: 1px solid #000;
   padding-bottom: 62px;
+  z-index: 0;
+  // overflow: hidden;
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+
+    background-color: black;
+  }
 
   &__title {
     color: #fff;
@@ -37,6 +49,7 @@
     border-radius: 30px;
     border: 1px solid #008080;
     background: #fff;
+    z-index: 1;
   }
   &__box-text {
     color: #003744;
@@ -71,6 +84,7 @@
     margin-bottom: 15px;
   }
   &__text2 {
+    position: relative;
     color: #f7f7f7;
     text-align: center;
     font-family: Montserrat;
@@ -81,18 +95,31 @@
   }
 
   &__radius {
-    width: 662px;
+    position: relative;
+    width: 100%;
     height: 325px;
+    background-image: url('../../img/Ellipse.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+
     position: absolute;
-    top: 10px;
+    bottom: -73px;
     left: 0;
-    // width: 100%;
-    // height: 325px;
+    z-index: -1;
+  }
 
-    // background-color: #fff;
+  &__gradient {
+    position: absolute;
+    bottom: 68px;
+    left: -285px;
+    width: 398px;
+    height: 398px;
+    flex-shrink: 0;
 
-    border-radius: 50%;
-    background: #003744;
+    border-radius: 398px;
+    background: linear-gradient(146deg, #00c2c2 10.79%, #00404f 133.48%), #00c2c2;
+    filter: blur(150px);
+    z-index: -1;
   }
   &__img-wrapper {
     width: 59.58px;
@@ -102,4 +129,62 @@
 
     flex-shrink: 0;
   }
+
+  &__img {
+    position: absolute;
+    bottom: -73px;
+    left: 0;
+  }
+
+  // &__decor-img--box {
+  //   position: absolute;
+  // }
+}
+.svg__wrapper {
+  position: absolute;
+}
+.benefit__decor-img {
+  position: absolute;
+}
+.svg__wrapper--1 {
+  bottom: 311px;
+  left: 65px;
+  z-index: 10;
+}
+.svg__wrapper--2 {
+  bottom: 186px;
+  left: 352px;
+  z-index: 10;
+}
+.svg__wrapper--3 {
+  bottom: -30px;
+  left: 111px;
+  z-index: 10;
+}
+.svg__wrapper--4 {
+  bottom: -19px;
+  left: 318px;
+  z-index: 10;
+}
+
+.img--1 {
+  bottom: 315px;
+  left: 69px;
+  z-index: 10;
+}
+
+.img--2 {
+  bottom: 192px;
+  left: 357px;
+  z-index: 10;
+}
+.img--3 {
+  bottom: -26px;
+  left: 115px;
+  z-index: 10;
+}
+.img--4 {
+  bottom: -12px;
+  left: 325px;
+  z-index: 10;
 }

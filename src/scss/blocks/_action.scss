@@ -1,0 +1,94 @@
+.action {
+  border: 1px solid #008080;
+  background: linear-gradient(0deg, rgba(0, 194, 194, 0.2) 0%, rgba(0, 194, 194, 0) 48.16%), #003744;
+  padding-top: 64px;
+  padding-bottom: 83px;
+
+  &__title {
+    color: #fff;
+    text-align: center;
+    font-family: 'Montserrat Alternates';
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+
+    margin-bottom: 30px;
+  }
+
+  &__title--2 {
+    color: #fff;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    margin-bottom: 40px;
+  }
+
+  &__title--3 {
+    color: #fff;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 11px;
+  }
+
+  &__title--price {
+    color: #fff;
+    text-align: center;
+
+    /* 11 */
+    text-shadow: 0px 4px 24px rgba(255, 255, 255, 0.25);
+    font-family: Montserrat;
+    font-size: 45.286px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    margin-bottom: 29px;
+  }
+
+  &__title--price--2 {
+    display: inline-block;
+    position: relative;
+    color: #fff;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 10px;
+      left: -8px;
+      width: 88px;
+      height: 4px;
+      background-color: red;
+
+      transform-origin: center bottom;
+      transform: rotate(15deg);
+    }
+  }
+
+  &__payment--text {
+    color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    margin-top: 29px;
+  }
+}
