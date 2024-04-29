@@ -3,6 +3,10 @@
   padding-top: 28px;
   padding-bottom: 35px;
 
+  @include tablet {
+    padding-bottom: 47px;
+  }
+
   &__title {
     color: #003744;
     font-family: 'Montserrat Alternates';
@@ -12,6 +16,11 @@
     line-height: normal;
     text-transform: uppercase;
     margin-bottom: 46px;
+
+    @include tablet {
+      font-size: 60px;
+      text-align: center;
+    }
   }
 
   &__box-wrwpper {
@@ -30,6 +39,10 @@
     gap: 10px;
     border-radius: 30px;
     background: #008080;
+
+    @include tablet {
+      width: 880px;
+    }
   }
   &__box-text {
     color: #fff;

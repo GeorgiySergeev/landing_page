@@ -1,7 +1,26 @@
 .author {
   padding-top: 30px;
   padding-bottom: 21px;
-  background-color: rgba(244, 246, 246, 1);
+  background-color: rgb(255, 255, 255);
+  // border-radius: 51px;
+  // background: #f4f6f6;
+
+  &__wrapper {
+    padding-bottom: 21px;
+    border-radius: 51px;
+    background: #f4f6f6;
+
+    @include tablet {
+      padding: 80px;
+      display: flex;
+      align-items: center;
+      gap: 52px;
+    }
+  }
+
+  &__right-wrapper {
+    max-width: 686px;
+  }
 
   &__title {
     color: #003744;
@@ -12,6 +31,9 @@
     line-height: normal;
     text-transform: uppercase;
     margin-bottom: 20px;
+    @include tablet {
+      font-size: 45px;
+    }
   }
 
   &__title-second {
@@ -23,6 +45,11 @@
     line-height: normal;
     margin-bottom: 20px;
     text-wrap: normal;
+
+    @include tablet {
+      font-size: 30px;
+      margin-bottom: 32px;
+    }
   }
 
   &__title-span {
@@ -38,15 +65,23 @@
     align-items: center;
     gap: 10px;
 
+    font-size: 14px;
+
     border-radius: 28px;
     border: 1px solid #008080;
     margin-bottom: 20px;
+
+    @include tablet {
+      width: 465px;
+      font-size: 18px;
+      margin-bottom: 32px;
+    }
   }
 
   &__box-text {
     color: #008080;
     font-family: Montserrat;
-    font-size: 14px;
+
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -55,7 +90,7 @@
   &__box-text2 {
     color: #003744;
     font-family: Montserrat;
-    font-size: 14px;
+
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -69,10 +104,18 @@
     font-weight: 700;
     line-height: normal;
     margin-bottom: 28px;
+
+    @include tablet {
+      margin-bottom: 0;
+      width: 580px;
+    }
   }
 
   &__photo {
     width: 100%;
     margin: 0 auto;
+    @include tablet {
+      width: 515px;
+    }
   }
 }

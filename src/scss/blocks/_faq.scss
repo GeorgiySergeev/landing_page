@@ -1,6 +1,9 @@
 .faq {
   background-color: #fff;
   padding-bottom: 70px;
+  @include tablet {
+    padding-top: 60px;
+  }
 
   &__title {
     color: #003744;
@@ -10,6 +13,12 @@
     font-weight: 700;
     line-height: normal;
     text-transform: uppercase;
+
+    @include tablet {
+      font-size: 60px;
+      text-align: center;
+      margin-bottom: 60px;
+    }
   }
 
   &__list {
@@ -36,6 +45,10 @@
     font-weight: 600;
     line-height: normal;
     overflow: auto;
+
+    @include tablet {
+      font-size: 20px;
+    }
   }
 
   &__item-title {
@@ -55,6 +68,11 @@
     line-height: normal;
 
     margin-top: 10px;
+
+    @include tablet {
+      font-size: 18px;
+      max-width: 780px;
+    }
   }
 
   &__item-content--span {

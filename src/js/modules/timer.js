@@ -23,7 +23,7 @@
 //   minEl.textContent = addLeadingZero(Math.floor(((ms % day) % hour) / minute));
 // }
 function timer() {
-  const targetDate = new Date('2024-04-28T00:00:00');
+  const targetDate = new Date('2024-04-30T00:00:00');
   const currentDate = new Date();
 
   const totalSeconds = Math.floor((targetDate - currentDate) / 1000);

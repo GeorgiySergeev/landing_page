@@ -14,6 +14,10 @@
     text-align: center;
 
     margin-bottom: 35px;
+
+    @include tablet {
+      font-size: 60px;
+    }
   }
 
   &__text {
@@ -25,14 +29,27 @@
     font-weight: 500;
     line-height: normal;
     margin-bottom: 20px;
+
+    @include tablet {
+      font-size: 18px;
+      width: 515px;
+      margin: 0 auto;
+      margin-bottom: 43px;
+    }
   }
   &__box-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 6px;
-    grid-row-gap: 3px;
+    grid-row-gap: 16px;
     margin-bottom: 35px;
+
+    @include tablet {
+      max-width: 832px;
+      margin: 0 auto;
+      margin-bottom: 44px;
+    }
   }
   &__box {
     display: flex;
@@ -72,11 +89,28 @@
     border: 1px solid #008080;
     background: linear-gradient(0deg, rgba(0, 194, 194, 0.2) 0%, rgba(0, 194, 194, 0) 48.16%),
       #003744;
+
+    @include tablet {
+      max-width: 1170px;
+      margin: 0 auto;
+      padding-bottom: 84px;
+    }
   }
+
   &__promo-wrapper {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    align-items: center;
+  }
+
+  &__promo-box-container {
+    max-width: 919px;
+    display: flex;
+    flex-wrap: wrap;
+    // margin: 0 auto;
+    gap: 25px;
+    justify-content: center;
     align-items: center;
   }
 

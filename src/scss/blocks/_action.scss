@@ -15,6 +15,13 @@
     text-transform: uppercase;
 
     margin-bottom: 30px;
+
+    @include tablet {
+      font-size: 60px;
+      width: 770px;
+      margin: 0 auto;
+      margin-bottom: 49px;
+    }
   }
 
   &__title--2 {
@@ -27,6 +34,12 @@
     line-height: normal;
 
     margin-bottom: 40px;
+
+    @include tablet {
+      font-size: 20px;
+      width: 376px;
+      margin: 0 auto 57px auto;
+    }
   }
 
   &__title--3 {
@@ -38,6 +51,9 @@
     font-weight: 600;
     line-height: normal;
     margin-bottom: 11px;
+    @include tablet {
+      font-size: 20px;
+    }
   }
 
   &__title--price {
@@ -80,6 +96,12 @@
     }
   }
 
+  &__counter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   &__payment--text {
     color: rgba(255, 255, 255, 0.6);
     text-align: center;
@@ -90,5 +112,10 @@
     line-height: normal;
 
     margin-top: 29px;
+
+    @include tablet {
+      width: 376px;
+      margin: 24px auto 0 auto;
+    }
   }
 }

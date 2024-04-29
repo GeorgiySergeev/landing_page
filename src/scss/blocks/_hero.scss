@@ -1,9 +1,14 @@
 .font-1 {
   font-family: 'Montserrat';
   font-weight: 700;
-  //   font-style: italic;
-  color: #f7f7f7;
+  font-size: 16px;
   padding-bottom: 26.5px;
+  color: #f7f7f7;
+
+  @include tablet {
+    font-size: 20px;
+    line-height: 28px; /* 140% */
+  }
 }
 
 .font-2 {
@@ -15,6 +20,10 @@
   font-family: 'Montserrat Alternates';
   line-height: normal;
   text-transform: uppercase;
+
+  @include tablet {
+    width: 599px;
+  }
 }
 
 .hero {
@@ -23,10 +32,15 @@
   padding-bottom: 20px;
   overflow: hidden;
 
+  @include tablet {
+    padding-top: 28px;
+    padding-bottom: 41px;
+  }
+
   &__svg-wrapper {
     position: absolute;
-    top: 264px;
-    right: 25px;
+    top: -449px;
+    right: 5px;
     width: 70.774px;
     height: 70.774px;
     flex-shrink: 0;
@@ -35,14 +49,29 @@
 
     border: 1.293px solid rgba(0, 194, 194, 1);
     // border-image: linear-gradient(rgba(0, 194, 194, 1), rgba(0, 64, 79, 1)) 1 1;
+
+    @include tablet {
+      width: 145px;
+      height: 145px;
+
+      top: 441px;
+      left: -65px;
+    }
   }
 
   &__svg-wrapper--small {
-    top: 366px;
-    right: 62px;
+    top: -332px;
+    right: 47px;
     width: 41.39px;
     height: 41.39px;
     flex-shrink: 0;
+
+    @include tablet {
+      width: 64px;
+      height: 64px;
+      top: 0px;
+      left: 450px;
+    }
   }
 
   &__title-span1 {
@@ -54,6 +83,11 @@
 
     margin-bottom: 5px;
     display: block;
+
+    @include tablet {
+      font-size: 32.539px;
+      margin-bottom: 8px;
+    }
   }
   &__title-span2 {
     color: #fff;
@@ -63,6 +97,10 @@
     font-weight: 600;
     line-height: normal;
     text-transform: uppercase;
+
+    @include tablet {
+      font-size: 41.849px;
+    }
   }
 
   &__title-span3 {
@@ -73,20 +111,29 @@
     font-weight: 700;
     line-height: normal;
     text-transform: uppercase;
+
+    @include tablet {
+      display: block;
+      font-size: 82px;
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
   }
 }
 
 .promo {
-  // @include desctop {
-  //   background-color: tomato;
-  // }
+  @include tablet {
+    margin-bottom: 65px;
+  }
 
   &__inner {
-    @include mobile {
-      display: block;
-    }
     display: flex;
+    flex-direction: column;
     gap: 10px;
+
+    @include tablet {
+      flex-direction: row;
+    }
   }
 
   &__box-1 {
@@ -100,7 +147,6 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    margin-bottom: 10px;
   }
 
   &__box-2 {
@@ -160,6 +206,20 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+
+    @include tablet {
+      width: 283px;
+      margin: 36px 0;
+      font-size: 20px;
+
+      padding: 22px 55px;
+      justify-content: center;
+      align-items: center;
+
+      border-radius: 30px;
+      background: linear-gradient(99deg), #00c2c2;
+      background-blend-mode: overlay, normal;
+    }
   }
 
   &__icon {
@@ -178,6 +238,10 @@
     display: flex;
     justify-content: center;
     gap: 30px;
+
+    @include tablet {
+      margin: 0 0 0 35px;
+    }
   }
 
   &__counter-box {
@@ -220,6 +284,7 @@
   }
 
   &__team-img {
+    position: relative;
     width: 352px;
     height: 352px;
     flex-shrink: 0;
@@ -233,7 +298,16 @@
     margin: auto;
     margin-bottom: 74px;
     margin-top: 28px;
+
+    @include tablet {
+      position: absolute;
+      top: 104px;
+      right: 8%;
+      width: 545px;
+      height: 545px;
+    }
   }
+
   &__team-img-box {
     position: relative;
     width: 311px;
@@ -244,6 +318,13 @@
     background-repeat: no-repeat;
     background-size: contain;
     z-index: 10;
+
+    @include tablet {
+      top: 0;
+      right: 0;
+      width: 480px;
+      height: 480px;
+    }
   }
 
   &__bg {
@@ -260,6 +341,13 @@
     filter: blur(97.00772857666016px);
     background-size: contain;
     background-repeat: no-repeat;
+
+    @include tablet {
+      width: 467px;
+      height: 467px;
+      top: 235px;
+      right: 0px;
+    }
   }
 
   &__final-text {

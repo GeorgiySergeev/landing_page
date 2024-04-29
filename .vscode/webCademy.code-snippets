@@ -13,6 +13,15 @@
 		"description": "Log output to console"
 	},
 
+	/*Media Desctop*/
+
+	"mediaDesctop": {
+		"scope": "css,scss",
+		"prefix": "desctop",
+		"body": ["@include desctop {", "    ${1}", "}"],
+		"description": "desctop"
+	},
+
 	/* Media Tablet */
 	"mediaTablet": {
 		"scope": "css,scss",
